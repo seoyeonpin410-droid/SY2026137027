@@ -119,4 +119,4 @@ MonoBehaviour:
   invincibleTime: 0
   dropPrefab: {fileID: 7399693454606060860, guid: af59e08f71a0e204bbc080ffb515959a, type: 3}
   dropChance: 0.3
-  hitEffect: {fileID: 0}
+  hitEffect: {fileID: 3244662063762740426, guid: f31fe6ae8b788ca4d86b5cfc6b36ebe2, type: 3}
