@@ -67,5 +67,54 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 86e49acdce7d99e49be8a501bca575eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2499898491551276241}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 86e49acdce7d99e49be8a501bca575eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4391274085440290755}
   m_SourcePrefab: {fileID: 100100000, guid: 86e49acdce7d99e49be8a501bca575eb, type: 3}
+--- !u!1 &573621308712748754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86e49acdce7d99e49be8a501bca575eb, type: 3}
+  m_PrefabInstance: {fileID: 807411363170630531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2499898491551276241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573621308712748754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab93d5d483dea0e45a95e151667db6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
+  bulletPrefab: {fileID: 8508740902298476403, guid: 6b6553f1f0b12e64ca41910433271067, type: 3}
+  firePoint: {fileID: 1603326986273207706, guid: 6b6553f1f0b12e64ca41910433271067, type: 3}
+  moveSpeed: 2
+  keepDistance: 8
+  fireRange: 12
+  fireInterval: 2
+  bulletSpeed: 10
+--- !u!114 &-4391274085440290755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573621308712748754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27d6252a2776f346a12a230718b8d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHp: 3
+  currentHp: 0
+  hpSlider: {fileID: 0}
+  invincibleTime: 0
+  dropPrefab: {fileID: 7399693454606060860, guid: af59e08f71a0e204bbc080ffb515959a, type: 3}
+  dropChance: 0.3
+  hitEffect: {fileID: 0}

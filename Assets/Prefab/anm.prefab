@@ -64,8 +64,59 @@ PrefabInstance:
       propertyPath: m_Name
       value: anm
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a460dd7f5b0d34d8d466af2c25e9b1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 42a460dd7f5b0d34d8d466af2c25e9b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6508444796867820976}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 42a460dd7f5b0d34d8d466af2c25e9b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2029487731591635027}
   m_SourcePrefab: {fileID: 100100000, guid: 42a460dd7f5b0d34d8d466af2c25e9b1, type: 3}
+--- !u!1 &8491526111107688947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 42a460dd7f5b0d34d8d466af2c25e9b1, type: 3}
+  m_PrefabInstance: {fileID: 8725337060581971106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6508444796867820976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491526111107688947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb5df0144b40964a85bbb9ef8be8bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
+  moveSpeed: 2
+  detectRange: 15
+  attackRange: 1.5
+  damage: 1
+  attackCooldown: 1
+--- !u!114 &-2029487731591635027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491526111107688947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27d6252a2776f346a12a230718b8d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHp: 3
+  currentHp: 0
+  hpSlider: {fileID: 0}
+  invincibleTime: 0
+  dropPrefab: {fileID: 7399693454606060860, guid: af59e08f71a0e204bbc080ffb515959a, type: 3}
+  dropChance: 0.3
+  hitEffect: {fileID: 0}
