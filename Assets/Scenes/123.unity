@@ -257,6 +257,8 @@ GameObject:
   - component: {fileID: 778867682}
   - component: {fileID: 778867684}
   - component: {fileID: 778867683}
+  - component: {fileID: 778867686}
+  - component: {fileID: 778867685}
   m_Layer: 0
   m_Name: tester
   m_TagString: Untagged
@@ -310,6 +312,40 @@ MonoBehaviour:
   gold: 100
   potion: 3
   attack: 10
+--- !u!114 &778867685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778867681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2ac7535bd9c5c47b63f7af23f81685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RewardCalc
+  playSeconds: 3725
+  gold: 1234
+  members: 4
+  kills: 7
+  expPerKill: 35
+  totalDamage: 250
+  hits: 20
+  expRate: 1.5
+--- !u!114 &778867686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778867681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e54ad4fea596040852c0757d8b6a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HpPractice
+  currentHp: 10
+  maxHp: 20
 --- !u!1 &1273042037
 GameObject:
   m_ObjectHideFlags: 0
