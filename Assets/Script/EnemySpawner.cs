@@ -8,6 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public int maxAlive = 10;
  
     float timer;
+    
     void Update()
     {
         timer += Time.deltaTime;
